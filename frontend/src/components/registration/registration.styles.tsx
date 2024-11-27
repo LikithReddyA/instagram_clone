@@ -1,7 +1,7 @@
 import { SxProps } from "@mui/material";
 
 export default function registrationStyles() {
-    const styles:Record<any, SxProps> = {
+    const styles: Record<any, SxProps> = {
         main: {
             textAlign: 'center', // `text-align` converted to `textAlign`
             display: 'flex',
@@ -25,16 +25,32 @@ export default function registrationStyles() {
         },
         signUpButton: {
             borderRadius: '6px', // Direct mapping for `border-radius`
+            height: '30px',
+            fontSize: '12px'
         },
-        inputBox:{
-            margin:'5px !important',
-            '& .MuiInputBase-input':{
-                padding:'5px',
+        inputBox: {
+            margin: '5px !important',
+            '& .MuiInputBase-input': {
+                padding: '5px',
             },
-            '& .MuiInputBase-root':{
-                margin:'0px',
+            '& .MuiInputBase-root': {
+                margin: '0px',
+                padding: '0px',
+            },
+            '& .MuiFormLabel-root': {
+                fontSize: "12px",
+            },
+            '& .MuiFormHelperText-root': {
+                fontSize: '10px',
+            },
+            '& .MuiInputAdornment-root': {
+                margin: '2px',
+            },
+            '& .MuiButtonBase-root': {
+                fontSize: '10px'
             }
-        }
+
+        },
     };
     return styles;
 }
